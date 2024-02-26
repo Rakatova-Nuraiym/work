@@ -1,12 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { ColculateSlider } from "./featurs/cacultate";
+import { CalcultorSlice2 } from "./featurs/calcuatorSlices";
 import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
 
 export const store = configureStore({
-  reducer: ColculateSlider.reducer,
+  reducer: CalcultorSlice2,
 });
 
-export const useAppDispath: () => typeof store.dispatch = useDispatch;
+export const useAppDispatch: () => typeof store.dispatch = useDispatch;
 export const useAppSelector: TypedUseSelectorHook<
   ReturnType<typeof store.getState>
 > = useSelector;

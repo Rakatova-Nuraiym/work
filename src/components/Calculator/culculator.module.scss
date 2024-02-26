@@ -1,0 +1,44 @@
+.Culculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  .minicalc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    border: 1px solid black;
+    width: 360px;
+    height: 550px;
+
+    .inputs {
+      display: flex;
+      gap: 20px;
+      input {
+        width: 120px;
+        height: 30px;
+        font-size: 20px;
+        border-radius: 20px;
+        border: none;
+        box-shadow: 0px 0px 30px 1px blue;
+      }
+    }
+
+    .buttons {
+      display: flex;
+      gap: 10px;
+
+      button {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        background: rgb(133, 177, 236);
+        border: none;
+      }
+    }
+  }
+}
